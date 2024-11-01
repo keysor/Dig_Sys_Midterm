@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Video Format Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Digital Video Format Comparison</h1>
+        <nav>
+            <a href="#overview">Overview</a>
+            <a href="#formats">Formats & Compression</a>
+            <a href="#results">Results & Use Cases</a>
+            <a href="#compatibility">Compatibility</a>
+            <a href="#conclusion">Conclusion</a>
+        </nav>
+    </header>
+
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>This project explores the efficiency and use cases of different video formats, including MP4, AVI, and QuickTime (MOV). The comparison considers file size, compression efficiency, compatibility, and suitability for different applications like streaming, editing, and archiving.</p>
+    </section>
+
+    <section id="formats">
+        <h2>Formats & Compression</h2>
+        <p>Each video format has unique characteristics that influence file size, compression, and quality retention. Below are the details of each format's compression method and typical attributes:</p>
+        <ul>
+            <li><strong>MP4</strong>: Utilizes H.264 or H.265 codecs for efficient compression and small file sizes. Widely used in streaming due to its balance of quality and file size.</li>
+            <li><strong>AVI</strong>: Less compressed or uncompressed, often resulting in large file sizes. Known for high quality, making it suitable for editing and archival.</li>
+            <li><strong>QuickTime (MOV)</strong>: Often uses Apple ProRes or H.264 codecs, allowing high-quality storage with good compatibility, especially on Apple devices. Commonly used in professional video editing environments.</li>
+        </ul>
+    </section>
+
+    <section id="results">
+        <h2>Results & Use Cases</h2>
+        <p>This section presents a comparison of file size, quality, and efficiency for each video format based on typical compression settings. Each format's strengths are outlined to match its best use case.</p>
+        <table>
+            <tr>
+                <th>Format</th>
+                <th>Compression</th>
+                <th>File Size</th>
+                <th>Quality</th>
+                <th>Export Time</th>
+                <th>Typical Use Case</th>
+            </tr>
+            <tr>
+                <td>MP4</td>
+                <td>H.264 VBR @ 19.7 Mbps</td>
+                <td>154,538 KB</td>
+                <td>High</td>
+                <td>18 Seconds</td>
+                <td>Streaming, web content, general storage</td>
+            </tr>
+            <tr>
+                <td>AVI</td>
+                <td>DV (24p Advanced)</td>
+                <td>221,149 KB</td>
+                <td>Medium</td>
+                <td>37 Seconds</td>
+                <td>Professional editing, archival</td>
+            </tr>
+            <tr>
+                <td>QuickTime (MOV)</td>
+                <td>Apple ProRes 422 HQ</td>
+                <td>5,259,321 KB</td>
+                <td>Very High</td>
+                <td>85 Seconds</td>
+                <td>Professional editing, high-quality storage, Apple ecosystem</td>
+            </tr>
+        </table>
+    </section>
+    <section id="videos"><!--upload mp4 versions?-->
+        <h2>Sample Videos</h2>
+        <p>Below are sample videos demonstrating each format. As you can see, a few aren't supported. In my case the AVI and MOV will not display on my browser, and MOV won't display on my operating system. I attempted to convert them to MP4's for the sake of viewing the video via FFMPEG however, this defeats the purpose and reformats them.</p>
+
+        <h3>MP4 Video</h3>
+        <video width="600" controls>
+            <source src="H264.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h3>AVI Video</h3>
+        <video width="600" controls>
+            <source src="AVI.avi" type="video/avi">
+            Your browser does not support the video tag.
+        </video>
+
+        <h3>QuickTime (MOV) Video</h3>
+        <video width="600" controls>
+            <source src="MOV.mov" type="video/quicktime">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="compatibility">
+        <h2>Playback Compatibility</h2>
+        <p>Compatibility for each format varies across devices and operating systems as previously mentioned. This section outlines compatibility considerations:</p>
+        <ul>
+            <li><strong>MP4</strong>: Universally compatible with most devices, browsers, and media players, making it the most versatile format.</li>
+            <li><strong>AVI</strong>: Primarily compatible with Windows systems; limited support on mobile devices and web browsers. (Pretty much outdated on all browsers as far as I could tell).</li>
+            <li><strong>QuickTime (MOV)</strong>: Optimized for Apple devices and software but requires additional codecs on some non-Apple systems.</li>
+        </ul>
+    </section>
+
+    <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>During my analysis, I've discovered and ideally shown how MP4 is ideal for general use due to its efficiency and compatability, AVI is pretty outdated as far as I can tell however during my research I found it's good for high-quality storage where file size is less critical. QuickTime or MOV is widely used in professional editing envrionments specifically in the Apple world, however this takes an immense amount of space. Each format offers their benefits and drawbacks. Each one has its use in specific scenarios in the realm of digital media. </p>
+    </section>
+
+    <footer>
+        <p>Ben Dargue | BRDD3Q | Digital Systems Midterm</p>
+    </footer>
+</body>
+</html>
